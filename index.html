@@ -1,14 +1,84 @@
-<!-- Title: wordlikeness project -->
-
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <title>Wordlikeness Project</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>
-            Wordlikeness Project
-        </h1>
+        <div class="container">
+            <header>
+                <h1>Wordlikeness Project</h1>
+                <p>Welcome to the Wordlikeness Project websiute. Use the form below to filter and download deidentified data from our experiments.</p>
+            </header>
+
+            <section>
+                <h2>Download Data</h2>
+                <p>Select your desired parameters to generate a downloadable TSV file.</p>
+                <form>
+                    <div class="field">
+                        <label for="language">Language</label>
+                        <select id="language" name="language">
+                            <option value="english">English</option>
+                            <option value="korean">Korean</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Presentation Modality</label>
+                        <div class=""options">
+                            <input type="radio" id="auditory" name="modality" value="auditory" checked>
+                            <label for="auditory">Auditory</label>
+                            <input type="radio" id="orthographic" name="modality" value="orthographic">
+                            <label for="orthographic">Orthographic</label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Presentation Format</label>
+                        <div class=""options">
+                            <input type="checkbox" id="laboratory" name="format" value="laboratory" checked>
+                            <label for="laboratory">Laboratory</label>
+                            <input type="checkbox" id="online" name="format" value="online">
+                            <label for="online">Online</label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Response Modality</label>
+                        <div class=""options">
+                            <input type="radio" id="likert" name="response_modality" value="likert" checked>
+                            <label for="likert">Likert</label>
+                            <input type="radio" id="binary" name="response_modality" value="binary">
+                            <label for="binary">Binary</label>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="transcriptions">Require transcriptions</label>
+                        <input type="checkbox" id="transcriptions" name="transcriptions" value="required">
+                    </div>
+                    
+                    <div class="field">
+                        <label>Data Type</label>
+                        <div class=""options">
+                            <input type="radio" id="per_trial" name="data_type" value="per_trial" checked>
+                            <label for="per_trial">Per-trial</label>
+                            <input type="radio" id="per_stimulus" name="data_type" value="per_stimulus">
+                            <label for="per_stimulus">Per-stimulus</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button">Download Data</button>
+                </form>
+            </section>
+
+            <footer>
+                <h2>Project Information</h2>
+                <ul class="info-links">
+                    <li><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2214137&HistoricalAwards=false" target="_blank">Grant Description</a></li>
+                    <li>PIs: Karthik Durvasula, Jimin Kahng, Kyle Gorman</li>
+                </ul>
+            </footer>
+        </div>
     </body>
 </html>
