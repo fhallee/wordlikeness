@@ -22,26 +22,6 @@ li {
   list-style-type: none;
 }
 
-form > .form-group > ul {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-form button[type="submit"] {
-  display: block;
-  margin: 1em 0;
-}
-
-.footer-text {
-  width: 90%;
-  max-width: 1000px;
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px 0;
-  font-size: 0.9em;
-  color: #666;
-}
-
 .info-links {
     padding-left: 0;
     margin-left: 0;
@@ -88,14 +68,9 @@ form button[type="submit"] {
 
 .options {
   display: flex;
-  gap: 1.5em;
+  gap: 0.5em;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.options input[type="radio"],
-.options input[type="checkbox"] {
-  margin-right: 0.3em;
 }
 
 .options label {
