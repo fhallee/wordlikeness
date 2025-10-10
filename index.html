@@ -3,6 +3,7 @@
     <head>
         <title>Wordlikeness Project</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -12,7 +13,7 @@
             </header>
 
             <section>
-                <h2>Download Data</h2>
+                <h2>Download data</h2>
                 <p>Select your desired parameters to generate a downloadable TSV file.</p>
                 <form>
                     <div class="field">
@@ -24,7 +25,7 @@
                     </div>
 
                     <div class="field">
-                        <label>Presentation Modality</label>
+                        <label>Presentation modality</label>
                         <div class="options">
                             <input type="radio" id="auditory" name="modality" value="auditory" checked>
                             <label for="auditory">Auditory</label>
@@ -33,8 +34,13 @@
                         </div>
                     </div>
 
+                    <div class="field" id="transcriptions-field">
+                        <label for="transcriptions">Require transcriptions</label>
+                        <input type="checkbox" id="transcriptions" name="transcriptions" value="required">
+                    </div>
+
                     <div class="field">
-                        <label>Presentation Format</label>
+                        <label>Presentation format</label>
                         <div class="options">
                             <input type="checkbox" id="laboratory" name="format" value="laboratory" checked>
                             <label for="laboratory">Laboratory</label>
@@ -44,31 +50,26 @@
                     </div>
 
                     <div class="field">
-                        <label>Response Modality</label>
+                        <label>Response modality</label>
                         <div class="options">
-                            <input type="radio" id="likert" name="response_modality" value="likert" checked>
+                            <input type="radio" id="likert" name="response-modality" value="likert" checked>
                             <label for="likert">Likert</label>
-                            <input type="radio" id="binary" name="response_modality" value="binary">
+                            <input type="radio" id="binary" name="response-modality" value="binary">
                             <label for="binary">Binary</label>
                         </div>
                     </div>
-
-                    <div class="field">
-                        <label for="transcriptions">Require transcriptions</label>
-                        <input type="checkbox" id="transcriptions" name="transcriptions" value="required">
-                    </div>
                     
                     <div class="field">
-                        <label>Data Type</label>
+                        <label>Data type</label>
                         <div class="options">
-                            <input type="radio" id="per_trial" name="data_type" value="per_trial" checked>
-                            <label for="per_trial">Per-trial</label>
-                            <input type="radio" id="per_stimulus" name="data_type" value="per_stimulus">
-                            <label for="per_stimulus">Per-stimulus</label>
+                            <input type="radio" id="per-trial" name="data-type" value="per-trial" checked>
+                            <label for="per-trial">Per-trial</label>
+                            <input type="radio" id="per-stimulus" name="data-type" value="per-stimulus">
+                            <label for="per-stimulus">Per-stimulus</label>
                         </div>
                     </div>
 
-                    <button type="submit" class="button">Download Data</button>
+                    <button type="submit" class="button">Download data</button>
                 </form>
             </section>
 
