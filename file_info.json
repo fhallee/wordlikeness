@@ -1,0 +1,38 @@
+[
+  {
+    "folder": "stimulus_level/experiment_1a",
+    "language": "english",
+    "presentation_modality": "auditory",
+    "presentation_format": "online",
+    "response_modality": "likert",
+    "transcriptions": false,
+    "data_type": "per-trial"
+  },
+  {
+    "folder": "stimulus_level/experiment_2a",
+    "language": "english",
+    "presentation_modality": "auditory",
+    "presentation_format": "online",
+    "response_modality": "likert",
+    "transcriptions": true,
+    "data_type": "per-trial"
+  },
+  {
+    "folder": "stimulus_level/experiment_3a",
+    "language": "korean",
+    "presentation_modality": "auditory",
+    "presentation_format": "online",
+    "response_modality": "likert",
+    "transcriptions": true,
+    "data_type": "per-trial"
+  },
+  {
+    "folder": "stimulus_level/experiment_3b",
+    "language": "korean",
+    "presentation_modality": "auditory",
+    "presentation_format": "online",
+    "response_modality": "binary",
+    "transcriptions": true,
+    "data_type": "per-trial"
+  }
+]
